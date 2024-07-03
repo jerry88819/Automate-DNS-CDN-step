@@ -1,15 +1,25 @@
-﻿# Automate-DNS-CDN-step
-騰訊雲 CDN 自動添加域名 API 
+# 使用騰訊雲自動化 DNS 和 CDN 步驟
 
-* /tencent/test 為添加域名
- 
- 要給兩個參數 
- 
- 一為 Domain_name 請填入聚名網內你所選擇的域名
- 
- 二為 Cdn_str	請填入 CDN 要指向的位置
- 
- 
- * /tencent/purge 為清理緩存
- 
- 要給一個參數為 需要被清理緩存的域名
+## 將域名添加到騰訊雲 CDN
+
+要自動將域名添加到騰訊雲 CDN，可以使用以下 API 端點：
+
+/tencent/test
+
+
+### 需要的參數
+
+1. **Domain_name**：您在聚名網 (Juming.com) 上選擇的域名。
+2. **Cdn_str**：CDN 要指向的位置。
+
+## 清理緩存
+
+要清理某個域名的緩存，可以使用以下 API 端點：
+
+/tencent/purge
+
+### 需要的參數
+
+- **Domain_name**：需要清理緩存的域名。
+
+---
